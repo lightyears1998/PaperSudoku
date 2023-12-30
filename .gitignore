@@ -2,5 +2,9 @@
 .godot/
 export_presets.cfg
 
+# IDEs
+.vs
+.vscode
+
 # Build results
 Exports
