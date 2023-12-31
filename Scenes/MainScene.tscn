@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6vg667hxsxp5"]
+[gd_scene load_steps=4 format=3 uid="uid://b6vg667hxsxp5"]
 
 [ext_resource type="Script" path="res://Scenes/MainScene.cs" id="1_hopbc"]
+[ext_resource type="PackedScene" uid="uid://e3ktfmf0cfd1" path="res://Components/Board.tscn" id="2_ttdk5"]
+[ext_resource type="PackedScene" uid="uid://4yyuel2mlsny" path="res://Components/DialPanel.tscn" id="3_lw1ae"]
 
 [node name="MainScene" type="MarginContainer"]
 anchors_preset = 15
@@ -18,5 +20,37 @@ script = ExtResource("1_hopbc")
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(350, 800)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
+
+[node name="HintLabel" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Paper Sudoku"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ResetButton" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "RESET"
+
+[node name="Board" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_ttdk5")]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="DialPanel" parent="ScrollContainer/VBoxContainer" instance=ExtResource("3_lw1ae")]
+layout_mode = 2

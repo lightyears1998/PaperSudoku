@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://b68gwuklvl8o3"]
+
+[ext_resource type="PackedScene" uid="uid://3hdm10icqp7p" path="res://Components/Cell.tscn" id="1_nulj0"]
+
+[node name="Room" type="GridContainer"]
+columns = 3
+
+[node name="Cell00" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell01" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell02" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell10" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell11" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell12" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell20" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell21" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2
+
+[node name="Cell22" parent="." instance=ExtResource("1_nulj0")]
+layout_mode = 2

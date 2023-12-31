@@ -5,6 +5,7 @@ export_presets.cfg
 # IDEs
 .vs
 .vscode
+Properties
 
 # Build results
 Exports

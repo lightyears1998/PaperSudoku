@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://e3ktfmf0cfd1"]
+
+[ext_resource type="PackedScene" uid="uid://b68gwuklvl8o3" path="res://Components/Room.tscn" id="1_b03pc"]
+
+[node name="Board" type="GridContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Room00" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room01" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room02" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room10" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room11" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room12" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room20" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room21" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2
+
+[node name="Room22" parent="." instance=ExtResource("1_b03pc")]
+layout_mode = 2

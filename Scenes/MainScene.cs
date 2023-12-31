@@ -3,8 +3,43 @@ namespace PaperSudoku;
 [SceneTree]
 public partial class MainScene : Control
 {
+    [Notify]
+    public GameState GameState { get; set; } = GameState.Reset;
+
+    public string GameStateDescription
+    {
+        get
+        {
+            return GameState switch
+            {
+                GameState.Reset => "Paper Sudoku",
+                GameState.Errored => "Errored",
+                GameState.Solved => "Congratulation!",
+                _ => throw new NotImplementedException(),
+            };
+        }
+    }
+
     public override void _Ready()
     {
-        GD.Print("OP.");
+        GameStateChanged += MainScene_GameStateChanged;
+        ResetButton.Pressed += ResetButton_Pressed;
     }
+
+    private void MainScene_GameStateChanged()
+    {
+        HintLabel.Text = GameStateDescription;
+    }
+
+    private void ResetButton_Pressed()
+    {
+        GameState = GameState.Reset;
+    }
+}
+
+public enum GameState
+{
+    Reset,
+    Errored,
+    Solved
 }

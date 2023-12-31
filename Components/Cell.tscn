@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://3hdm10icqp7p"]
+
+[node name="Cell" type="Button"]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 18.0
+offset_bottom = 31.0
+text = "0"
