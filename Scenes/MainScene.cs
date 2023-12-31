@@ -24,6 +24,12 @@ public partial class MainScene : Control
     {
         GameStateChanged += MainScene_GameStateChanged;
         ResetButton.Pressed += ResetButton_Pressed;
+        DialPanel.NumberDialed += DialPanel_NumberDialed;
+    }
+
+    private void DialPanel_NumberDialed(int number)
+    {
+        Board.PlaceNumber(number);
     }
 
     private void MainScene_GameStateChanged()
@@ -34,6 +40,7 @@ public partial class MainScene : Control
     private void ResetButton_Pressed()
     {
         GameState = GameState.Reset;
+        Board.Reset();
     }
 }
 

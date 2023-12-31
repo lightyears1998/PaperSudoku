@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bbp06vtto1x3t"]
+
+[ext_resource type="FontFile" uid="uid://bnqcdyqpvrly4" path="res://Assets/Fonts/Jost/Jost-VariableFont_wght.ttf" id="1_oi3ml"]
+
+[resource]
+base_font = ExtResource("1_oi3ml")
+variation_opentype = {
+2003265652: 600
+}

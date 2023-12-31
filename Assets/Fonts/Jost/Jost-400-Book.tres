@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://ua0xosqlvsby"]
+
+[ext_resource type="FontFile" uid="uid://bnqcdyqpvrly4" path="res://Assets/Fonts/Jost/Jost-VariableFont_wght.ttf" id="1_ebhto"]
+
+[resource]
+base_font = ExtResource("1_ebhto")

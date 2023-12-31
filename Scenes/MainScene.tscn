@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6vg667hxsxp5"]
+[gd_scene load_steps=5 format=3 uid="uid://b6vg667hxsxp5"]
 
 [ext_resource type="Script" path="res://Scenes/MainScene.cs" id="1_hopbc"]
+[ext_resource type="FontVariation" uid="uid://bbp06vtto1x3t" path="res://Assets/Fonts/Jost/Jost-600-Semi.tres" id="2_25n28"]
 [ext_resource type="PackedScene" uid="uid://e3ktfmf0cfd1" path="res://Components/Board.tscn" id="2_ttdk5"]
 [ext_resource type="PackedScene" uid="uid://4yyuel2mlsny" path="res://Components/DialPanel.tscn" id="3_lw1ae"]
 
@@ -36,6 +37,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_25n28")
 theme_override_font_sizes/font_size = 32
 text = "Paper Sudoku"
 
@@ -49,8 +51,10 @@ layout_mode = 2
 text = "RESET"
 
 [node name="Board" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_ttdk5")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 
 [node name="DialPanel" parent="ScrollContainer/VBoxContainer" instance=ExtResource("3_lw1ae")]
+unique_name_in_owner = true
 layout_mode = 2

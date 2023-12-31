@@ -1,7 +1,14 @@
-[gd_scene format=3 uid="uid://3hdm10icqp7p"]
+[gd_scene load_steps=3 format=3 uid="uid://3hdm10icqp7p"]
+
+[ext_resource type="Script" path="res://Components/Cell.cs" id="1_x3tb2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cbtg2"]
 
 [node name="Cell" type="Button"]
 custom_minimum_size = Vector2(32, 32)
 offset_right = 18.0
 offset_bottom = 31.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cbtg2")
 text = "0"
+script = ExtResource("1_x3tb2")

@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b68gwuklvl8o3"]
+[gd_scene load_steps=3 format=3 uid="uid://b68gwuklvl8o3"]
 
 [ext_resource type="PackedScene" uid="uid://3hdm10icqp7p" path="res://Components/Cell.tscn" id="1_nulj0"]
+[ext_resource type="Script" path="res://Components/Room.cs" id="1_xprjq"]
 
 [node name="Room" type="GridContainer"]
 columns = 3
+script = ExtResource("1_xprjq")
 
 [node name="Cell00" parent="." instance=ExtResource("1_nulj0")]
 layout_mode = 2

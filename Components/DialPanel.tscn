@@ -1,54 +1,68 @@
-[gd_scene format=3 uid="uid://4yyuel2mlsny"]
+[gd_scene load_steps=3 format=3 uid="uid://4yyuel2mlsny"]
+
+[ext_resource type="Script" path="res://Components/DialPanel.cs" id="1_gvu5q"]
+[ext_resource type="Script" path="res://Components/DialPanelButton.cs" id="1_t6m46"]
 
 [node name="DialPanel" type="HBoxContainer"]
 alignment = 1
+script = ExtResource("1_gvu5q")
 
 [node name="Button0" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "0"
+script = ExtResource("1_t6m46")
 
 [node name="Button1" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "1"
+script = ExtResource("1_t6m46")
 
 [node name="Button2" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "2"
+script = ExtResource("1_t6m46")
 
 [node name="Button3" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "3"
+script = ExtResource("1_t6m46")
 
 [node name="Button4" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "4"
+script = ExtResource("1_t6m46")
 
 [node name="Button5" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "5"
+script = ExtResource("1_t6m46")
 
 [node name="Button6" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "6"
+script = ExtResource("1_t6m46")
 
 [node name="Button7" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "7"
+script = ExtResource("1_t6m46")
 
 [node name="Button8" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "8"
+script = ExtResource("1_t6m46")
 
 [node name="Button9" type="Button" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 text = "9"
+script = ExtResource("1_t6m46")

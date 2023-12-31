@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://e3ktfmf0cfd1"]
+[gd_scene load_steps=3 format=3 uid="uid://e3ktfmf0cfd1"]
 
 [ext_resource type="PackedScene" uid="uid://b68gwuklvl8o3" path="res://Components/Room.tscn" id="1_b03pc"]
+[ext_resource type="Script" path="res://Components/Board.cs" id="1_phgx6"]
 
 [node name="Board" type="GridContainer"]
 anchors_preset = 8
@@ -11,6 +12,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+script = ExtResource("1_phgx6")
 
 [node name="Room00" parent="." instance=ExtResource("1_b03pc")]
 layout_mode = 2
