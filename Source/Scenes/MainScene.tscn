@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6vg667hxsxp5"]
+[gd_scene load_steps=6 format=3 uid="uid://b6vg667hxsxp5"]
 
 [ext_resource type="Script" path="res://Scenes/MainScene.cs" id="1_hopbc"]
 [ext_resource type="FontVariation" uid="uid://bbp06vtto1x3t" path="res://Assets/Fonts/Jost/Jost-600-Semi.tres" id="2_25n28"]
 [ext_resource type="PackedScene" uid="uid://e3ktfmf0cfd1" path="res://Components/Board.tscn" id="2_ttdk5"]
 [ext_resource type="PackedScene" uid="uid://4yyuel2mlsny" path="res://Components/DialPanel.tscn" id="3_lw1ae"]
+[ext_resource type="FontVariation" uid="uid://cj88ua062fxgk" path="res://Assets/Fonts/NotoSansSC/NotoSansSC-600-SemiBold.tres" id="3_msjyr"]
 
 [node name="MainScene" type="MarginContainer"]
 anchors_preset = 15
@@ -48,7 +49,8 @@ alignment = 1
 [node name="ResetButton" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "RESET"
+theme_override_fonts/font = ExtResource("3_msjyr")
+text = "重置"
 
 [node name="Board" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_ttdk5")]
 unique_name_in_owner = true

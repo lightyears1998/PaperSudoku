@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://dno4orjqfyph3"]
+
+[ext_resource type="FontFile" uid="uid://dl7nyl1248fj3" path="res://Assets/Fonts/NotoSansSC/NotoSansSC-VariableFont_wght.ttf" id="1_shqpo"]
+
+[resource]
+base_font = ExtResource("1_shqpo")
+variation_opentype = {
+2003265652: 900
+}
