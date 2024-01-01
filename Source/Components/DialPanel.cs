@@ -1,6 +1,6 @@
 namespace PaperSudoku;
 
-public partial class DialPanel : HBoxContainer
+public partial class DialPanel : Node
 {
     [Signal]
     public delegate void NumberDialedEventHandler(int number);
@@ -11,7 +11,7 @@ public partial class DialPanel : HBoxContainer
         {
             if (node is DialPanelButton button)
             {
-                button.NumberDialed += (number) => { EmitSignal(SignalName.NumberDialed, number); };
+                button.NumberDialed += (number) => EmitSignal(SignalName.NumberDialed, number);
             }
         }
     }

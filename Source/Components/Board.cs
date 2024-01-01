@@ -16,6 +16,12 @@ public partial class Board : GridContainer
 
     public override void _Ready()
     {
+        GetCells();
+        Reset();
+    }
+
+    private void GetCells()
+    {
         foreach (var node in GetChildren())
         {
             if (node is Room room)
@@ -30,8 +36,6 @@ public partial class Board : GridContainer
                 }
             }
         }
-
-        Reset();
     }
 
     private void Cell_CellSelected(Cell cell)
@@ -53,7 +57,7 @@ public partial class Board : GridContainer
 
         if (arrangement.Length != 81 * 2 + 1)
         {
-            throw new InvalidOperationException();
+            throw new ArgumentOutOfRangeException();
         }
 
         string[] parts = arrangement.Split(":");

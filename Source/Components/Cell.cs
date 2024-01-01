@@ -22,6 +22,7 @@ public partial class Cell : Button
     public override void _Ready()
     {
         this.Disabled = !this.Placeable;
+
         Pressed += Cell_Pressed;
         PlaceableChanged += Cell_PlaceableChanged;
         NumberChanged += Cell_NumberChanged;
