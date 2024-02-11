@@ -14,7 +14,7 @@ dest_files=["res://.godot/imported/Jost-VariableFont_wght.ttf-1ab29c0edb68933e7d
 
 Rendering=null
 antialiasing=1
-generate_mipmaps=false
+generate_mipmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
