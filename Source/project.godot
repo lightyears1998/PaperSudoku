@@ -25,6 +25,7 @@ window/size/viewport_width=440
 window/size/viewport_height=890
 window/energy_saving/keep_screen_on=false
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/handheld/orientation=1
 
 [dotnet]
