@@ -21,8 +21,10 @@ config/icon="res://Assets/icon.png"
 
 [display]
 
-window/size/viewport_width=440
-window/size/viewport_height=890
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=440
+window/size/window_height_override=890
 window/energy_saving/keep_screen_on=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
