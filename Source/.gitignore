@@ -4,6 +4,7 @@
 # IDEs
 .vs
 .vscode
+.idea
 Properties
 
 # Build results
