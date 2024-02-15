@@ -1,9 +1,0 @@
-[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://d1r8dgbfuuuny"]
-
-[ext_resource type="FontVariation" uid="uid://ctdj2opr6s64r" path="res://Assets/Fonts/NotoSansSC/NotoSansSC-Light.tres" id="1_qpvlw"]
-
-[resource]
-base_font = ExtResource("1_qpvlw")
-variation_opentype = {
-2003265652: 200
-}

@@ -1,9 +1,0 @@
-[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://ctdj2opr6s64r"]
-
-[ext_resource type="FontFile" uid="uid://dl7nyl1248fj3" path="res://Assets/Fonts/NotoSansSC/NotoSansSC-VariableFont_wght.ttf" id="1_iehl3"]
-
-[resource]
-base_font = ExtResource("1_iehl3")
-variation_opentype = {
-2003265652: 300
-}
