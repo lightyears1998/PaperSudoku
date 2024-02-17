@@ -30,7 +30,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4142136"
      inkscape:cx="174.65537"
-     inkscape:cy="252.08357"
+     inkscape:cy="253.49777"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -43,12 +43,12 @@
      id="title1">PaperSudoku Icon</title>
   <g
      id="g5"
-     transform="matrix(0.73421273,0,0,0.73421273,28.040074,28.040074)"
-     style="stroke-width:1.362">
+     transform="matrix(0.43441862,0,0,0.43441862,104.78796,104.78796)"
+     style="stroke-width:2.30191">
     <g
        fill="#00416f"
        id="g4"
-       style="stroke-width:1.362">
+       style="stroke-width:2.30191">
       <rect
          x="35.016998"
          y="323.70001"
@@ -57,7 +57,7 @@
          rx="0"
          ry="8.6791"
          id="rect1"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <rect
          x="35.016998"
          y="170.94"
@@ -66,7 +66,7 @@
          rx="0"
          ry="8.6791"
          id="rect2"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <rect
          transform="rotate(90)"
          x="35.016998"
@@ -76,7 +76,7 @@
          rx="0"
          ry="8.6791"
          id="rect3"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <rect
          transform="rotate(90)"
          x="35.016998"
@@ -86,42 +86,42 @@
          rx="0"
          ry="8.6791"
          id="rect4"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
     </g>
     <g
        fill="#de8787"
        id="g8"
-       style="stroke-width:1.362">
+       style="stroke-width:2.30191">
       <circle
          cx="102.41"
          cy="102.41"
          r="51.382999"
          id="circle4"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <circle
          cx="256.20001"
          cy="412.14001"
          r="51.382999"
          id="circle5"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <circle
          cx="414.29999"
          cy="413.57999"
          r="51.382999"
          id="circle6"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <circle
          cx="409.98999"
          cy="103.84"
          r="51.382999"
          id="circle7"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
       <circle
          cx="256.20001"
          cy="256"
          r="51.382999"
          id="circle8"
-         style="stroke-width:1.362" />
+         style="stroke-width:2.30191" />
     </g>
   </g>
   <metadata
@@ -149,13 +149,12 @@
     </rdf:RDF>
   </metadata>
   <rect
-     style="display:none;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     style="display:none;fill:#000000;fill-opacity:0.0901639;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
      id="rect5"
-     width="320"
-     height="320"
-     x="56"
-     y="56"
-     rx="335.0105"
+     width="192"
+     height="192"
+     x="120"
+     y="120"
      ry="0"
      inkscape:label="SafeZone" />
 </svg>
