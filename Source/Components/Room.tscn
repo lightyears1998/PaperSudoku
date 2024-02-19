@@ -3,50 +3,58 @@
 [ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_8ox42"]
 [ext_resource type="PackedScene" uid="uid://3hdm10icqp7p" path="res://Components/Cell.tscn" id="1_nulj0"]
 
-[node name="Room" type="GridContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Room" type="PanelContainer"]
+offset_right = 192.0
+offset_bottom = 192.0
 theme = ExtResource("1_8ox42")
+theme_type_variation = &"Room"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+theme_type_variation = &"Grid"
 columns = 3
 
-[node name="Cell00" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell00" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "1"
 
-[node name="Cell01" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell01" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "2"
 
-[node name="Cell02" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell02" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "3"
 
-[node name="Cell10" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell10" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "6"
 
-[node name="Cell11" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell11" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "5"
 
-[node name="Cell12" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell12" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "4"
 
-[node name="Cell20" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell20" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "8"
 
-[node name="Cell21" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell21" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "7"
 
-[node name="Cell22" parent="." instance=ExtResource("1_nulj0")]
+[node name="Cell22" parent="GridContainer" instance=ExtResource("1_nulj0")]
+unique_name_in_owner = true
 layout_mode = 2
 text = "9"
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 2

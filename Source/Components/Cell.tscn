@@ -10,7 +10,8 @@ theme = ExtResource("1_64kx3")
 theme_type_variation = &"Cell"
 text = "0"
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
+unique_name_in_owner = true
 z_index = -1
 layout_mode = 1
 anchors_preset = 15

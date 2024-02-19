@@ -3,38 +3,40 @@
 [ext_resource type="PackedScene" uid="uid://b68gwuklvl8o3" path="res://Components/Room.tscn" id="1_b03pc"]
 [ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_lvipk"]
 
-[node name="Board" type="GridContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="PanelContainer" type="PanelContainer"]
+offset_right = 588.0
+offset_bottom = 588.0
 theme = ExtResource("1_lvipk")
+theme_type_variation = &"Board"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+theme_type_variation = &"Grid"
 columns = 3
 
-[node name="Room00" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room00" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room01" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room01" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room02" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room02" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room10" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room10" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room11" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room11" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room12" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room12" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room20" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room20" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room21" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room21" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
 
-[node name="Room22" parent="." instance=ExtResource("1_b03pc")]
+[node name="Room22" parent="GridContainer" instance=ExtResource("1_b03pc")]
 layout_mode = 2
