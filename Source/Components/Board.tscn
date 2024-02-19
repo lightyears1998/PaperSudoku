@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://e3ktfmf0cfd1"]
+[gd_scene load_steps=3 format=3 uid="uid://e3ktfmf0cfd1"]
 
 [ext_resource type="PackedScene" uid="uid://b68gwuklvl8o3" path="res://Components/Room.tscn" id="1_b03pc"]
 [ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_lvipk"]
-[ext_resource type="Script" path="res://Components/Board.cs" id="1_phgx6"]
 
 [node name="Board" type="GridContainer"]
 anchors_preset = 15
@@ -12,7 +11,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_lvipk")
 columns = 3
-script = ExtResource("1_phgx6")
 
 [node name="Room00" parent="." instance=ExtResource("1_b03pc")]
 layout_mode = 2

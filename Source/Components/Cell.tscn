@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://3hdm10icqp7p"]
+[gd_scene load_steps=2 format=3 uid="uid://3hdm10icqp7p"]
 
 [ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_64kx3"]
-[ext_resource type="Script" path="res://Components/Cell.cs" id="1_x3tb2"]
 
 [node name="Cell" type="Button"]
 custom_minimum_size = Vector2(64, 64)
@@ -10,7 +9,6 @@ offset_bottom = 32.0
 theme = ExtResource("1_64kx3")
 theme_type_variation = &"Cell"
 text = "0"
-script = ExtResource("1_x3tb2")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -1

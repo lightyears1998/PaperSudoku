@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b68gwuklvl8o3"]
+[gd_scene load_steps=3 format=3 uid="uid://b68gwuklvl8o3"]
 
 [ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_8ox42"]
 [ext_resource type="PackedScene" uid="uid://3hdm10icqp7p" path="res://Components/Cell.tscn" id="1_nulj0"]
-[ext_resource type="Script" path="res://Components/Room.cs" id="1_xprjq"]
 
 [node name="Room" type="GridContainer"]
 anchors_preset = 15
@@ -12,7 +11,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_8ox42")
 columns = 3
-script = ExtResource("1_xprjq")
 
 [node name="Cell00" parent="." instance=ExtResource("1_nulj0")]
 layout_mode = 2
@@ -49,3 +47,6 @@ text = "7"
 [node name="Cell22" parent="." instance=ExtResource("1_nulj0")]
 layout_mode = 2
 text = "9"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
