@@ -5,6 +5,7 @@
 .vs
 .vscode
 .idea
+**.user
 Properties
 
 # Build results

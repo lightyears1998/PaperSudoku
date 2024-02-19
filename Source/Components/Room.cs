@@ -1,8 +1,5 @@
-namespace PaperSudoku;
+namespace PaperSudoku.Components;
 
 public partial class Room : GridContainer
 {
-    public override void _Ready()
-    {
-    }
 }
