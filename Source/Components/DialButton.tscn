@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bloeujl3nx55g"]
+
+[ext_resource type="Theme" uid="uid://dkus07xvjsh3i" path="res://Assets/Themes/main.tres" id="1_lfksg"]
+
+[node name="DialButton" type="Button"]
+custom_minimum_size = Vector2(64, 64)
+theme = ExtResource("1_lfksg")
+theme_type_variation = &"DialButton"
+text = "0"

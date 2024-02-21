@@ -1,54 +1,76 @@
-[gd_scene format=3 uid="uid://4yyuel2mlsny"]
+[gd_scene load_steps=2 format=3 uid="uid://4yyuel2mlsny"]
 
-[node name="DialPanel" type="HBoxContainer"]
+[ext_resource type="PackedScene" uid="uid://bloeujl3nx55g" path="res://Components/DialButton.tscn" id="1_3cs6y"]
+
+[node name="DialPanel" type="VBoxContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -304.0
+offset_right = 304.0
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_constants/separation = 30
 alignment = 1
 
-[node name="Button0" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
-text = "0"
+alignment = 1
 
-[node name="Button1" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button1" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "1"
 
-[node name="Button2" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button2" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "2"
 
-[node name="Button3" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button3" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "3"
 
-[node name="Button4" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button4" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "4"
 
-[node name="Button5" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button5" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "5"
 
-[node name="Button6" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button6" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "6"
 
-[node name="Button7" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button7" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "7"
 
-[node name="Button8" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button8" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "8"
 
-[node name="Button9" type="Button" parent="."]
-custom_minimum_size = Vector2(32, 32)
+[node name="Button9" parent="HBoxContainer" instance=ExtResource("1_3cs6y")]
 layout_mode = 2
 text = "9"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="RevertButton" type="Button" parent="HBoxContainer2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+theme_type_variation = &"DialButton"
+text = "撤销"
+
+[node name="Control" type="Control" parent="HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="EraseButton" type="Button" parent="HBoxContainer2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+theme_type_variation = &"DialButton"
+text = "擦除"

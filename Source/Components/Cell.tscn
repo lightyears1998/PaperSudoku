@@ -1,12 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://3hdm10icqp7p"]
-
-[ext_resource type="Theme" uid="uid://cxiyt1041exfl" path="res://Assets/Themes/sudoku.tres" id="1_64kx3"]
+[gd_scene format=3 uid="uid://3hdm10icqp7p"]
 
 [node name="Cell" type="Button"]
 custom_minimum_size = Vector2(64, 64)
 offset_right = 32.0
 offset_bottom = 32.0
-theme = ExtResource("1_64kx3")
 theme_type_variation = &"Cell"
 text = "0"
 
@@ -19,3 +16,105 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="Note1" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note2" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note3" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note4" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note5" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note6" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note7" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note8" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Note9" type="Label" parent="GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"Note"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
