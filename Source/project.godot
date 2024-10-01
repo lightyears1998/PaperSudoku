@@ -23,8 +23,8 @@ config/icon="res://Assets/Icons/icon.svg"
 
 window/size/viewport_width=720
 window/size/viewport_height=1280
-window/size/window_width_override=440
-window/size/window_height_override=890
+window/size/window_width_override=540
+window/size/window_height_override=960
 window/energy_saving/keep_screen_on=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
@@ -40,6 +40,13 @@ script/templates_search_path="res://CodeTemplates"
 naming/default_signal_callback_name="_On_{NodeName}_{SignalName}"
 naming/default_signal_callback_to_self_name="_On_{SignalName}"
 naming/scene_name_casing=1
+
+[gui]
+
+theme/custom="res://Assets/Themes/main.tres"
+theme/custom_font="res://Assets/Fonts/LxgwNeoXiHei/LXGWNeoXiHeiScreenFull.ttf"
+theme/default_font_hinting=2
+theme/default_font_generate_mipmaps=true
 
 [rendering]
 
